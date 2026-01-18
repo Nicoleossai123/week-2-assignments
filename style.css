@@ -1,0 +1,266 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+#home {
+    background-image: url('images/Cliff.jpg');
+}
+
+#activities {
+    background-image: url('images/runfly.jpg');
+}
+
+#contact {
+    background-image: url('images/cliff_rock.jpg');
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+
+header {
+    background-color: transparent;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1rem;
+    border-bottom: 1px solid #555;
+}
+
+.logo img {
+    max-height: 60px;
+    width: auto;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu li {
+    margin-left: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-menu a:hover {
+    color: #fff;
+    background-color: #007BFF;
+}
+
+.main-menu a.active {
+    background-color: #e67e22; /* Different color for active state */
+    color: white;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; border-bottom: 2px solid #007BFF; padding-bottom: 10px; display: inline-block; }
+h3 { font-size: 1.5rem; color: #3498db; }
+
+p {
+    margin-bottom: 1rem;
+    color: #eee;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* Partners Section */
+#partners {
+    list-style: none;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #e9ecef;
+}
+
+.partner {
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+table {
+    margin: 0 auto 20px auto;
+    width: 600px;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #333;
+}
+caption {
+    background-color: #972713;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    padding-top: 10px; 
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+thead {
+    background-color: #2283ec; 
+}
+tbody {
+    background-color: #EEFFE6;
+    text-align: center;
+}
+th, td {
+    padding: 10px;
+    height: 75px;
+    width: 225px;
+    border: 1px solid #852B1B;
+    vertical-align: middle; 
+
+}
+
+tbody td:first-child {
+    font-weight: bold;
+    text-align: left;
+    background-color: #72a2d4; 
+    color: #0f0e0e;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+}
+fieldset {
+    border: 2px solid #9ed034;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4977D1;
+    padding: 0 10px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    color: #4977D1;
+}
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+input[type=submit] {
+    background-color: #4977D1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+input[type=submit]:hover {
+    background-color: #9ed034;
+}
+
+#nondisclaimer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.copy {
+    font-size: 0.9rem;
+}
+
+.social a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+#disclaimer {
+    background-color: #222;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
