@@ -1,66 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Activities at the Cliffs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        table {
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        
+        th {
+            background-color: #8B4513;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #666;
+        }
+        
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #E8F4F8;
+        }
+        
+        tr:nth-child(odd):not(:first-child) {
+            background-color: #F0F8FF;
+        }
+        
+        .selectable {
+            cursor: pointer;
+        }
+        
+        .selectable:hover {
+            background-color: #FFEB3B !important;
+        }
+        
+        .selected {
+            background-color: #90EE90 !important;
+            font-weight: bold;
+        }
+        
+        .not-available {
+            background-color: #D3D3D3;
+            color: #666;
+        }
+    </style>
 </head>
-<body id="home">
-    <div class="container">
-        <header>
-            <div class="main-header">
-                <div class="logo">
-                    <img src="images/westcliff.png" alt="Great Cliffs Logo" width="125">
-                </div>
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="#">Cliffs</a></li>
-                        <li><a href="activities.html">Activities</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<body>
+    <h1>Activities at the Cliffs</h1>
+    
+    <table id="activitiesTable">
+        <thead>
+            <tr>
+                <th>Activity</th>
+                <th>West Cliff</th>
+                <th>North Cliff</th>
+                <th>East Cliff</th>
+                <th>South Cliff</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="activity-label">Hiking</td>
+                <td class="selectable">College Hikes</td>
+                <td class="selectable">Family Fun</td>
+                <td class="selectable">Treasure Trails</td>
+                <td class="selectable">Canyon Explorer</td>
+            </tr>
+            <tr>
+                <td class="activity-label">Kayak</td>
+                <td class="selectable">Western Kayak Meetup</td>
+                <td class="not-available">Not Available</td>
+                <td class="selectable">Youth Kayaking</td>
+                <td class="selectable">Kayak Down</td>
+            </tr>
+            <tr>
+                <td class="activity-label">Skydiving</td>
+                <td class="selectable">Skycliff Diving</td>
+                <td class="selectable">Sky is the Limit</td>
+                <td class="not-available">Not Available</td>
+                <td class="selectable">Sky Diving for Beginners</td>
+            </tr>
+            <tr>
+                <td class="activity-label">Biking</td>
+                <td class="selectable">Bicycle for One</td>
+                <td class="not-available">Not Available</td>
+                <td class="selectable">Bike Meetup Group</td>
+                <td class="not-available">Not Available</td>
+            </tr>
+            <tr>
+                <td class="activity-label">Camping</td>
+                <td class="selectable">Youth Camp</td>
+                <td class="selectable">Rent a Tent</td>
+                <td class="selectable">Campground Adventure</td>
+                <td class="selectable">Sunset Camping</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <main>
-            <h2>Introducing California's greatest Cliffs</h2>
-            <h3>What is so unique about California cliffs?</h3>
-            <p>California cliffs are one of a kind in the United States where no cliffs are as manificent and beautiful as them. And California is the only state that have cliffs that
-fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff.
-All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.</p><br>
-<h3>Where are these cliffs?</h3>
-<p>
-Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and
-most visited.</p>
-        </main>
-
-        <section>
-            <ul id="partners">
-                <li class="partner"><img src="images/partner-bustour.png" alt="Partner Bus Tour"></li>
-                <li class="partner"><img src="images/partner-cabinrental.png" alt="Partner Cabin Rental"></li>
-                <li class="partner"><img src="images/partner-campingad.png" alt="Partner Camping Adventure"></li>
-                <li class="partner"><img src="images/partner-collegetours.png" alt="Partner College Tours"></li>
-                <li class="partner"><img src="images/partner-rental.png" alt="Partner Bike Rentals"></li>
-                <li class="partner"><img src="images/partner-tourgroup.png" alt="Partner Tour Group"></li>
-            </ul>
-        </section>
-
-        <footer>
-            <div id="nondisclaimer">
-                <div class="copy">&copy; 2026 Great Cliffs</div>
-                <div class="social">
-                    <a href="#" class="fa-brands fa-facebook"></a>
-                    <a href="#" class="fa-brands fa-instagram"></a>
-                    <a href="#" class="fa-brands fa-twitter"></a>
-                </div>
-            </div>
-            <div id="disclaimer">
-                <p>This website is designed for educational purposes only.</p>
-                </div>      
-        </footer>
-    </div>
+    <!-- Link to jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Link to your activity.js file -->
+    <script src="js/activity.js"></script>
 </body>
 </html>
