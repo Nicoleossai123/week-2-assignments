@@ -10,18 +10,18 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
-        
+       
         h1 {
             color: #333;
         }
-        
+       
         table {
             border-collapse: collapse;
             background-color: white;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             margin-top: 20px;
         }
-        
+       
         th {
             background-color: #8B4513;
             color: white;
@@ -30,43 +30,76 @@
             font-weight: bold;
             border: 1px solid #666;
         }
-        
+       
         td {
             border: 1px solid #ccc;
             padding: 12px;
             text-align: center;
         }
-        
+       
         tr:nth-child(even) {
             background-color: #E8F4F8;
         }
-        
+       
         tr:nth-child(odd):not(:first-child) {
             background-color: #F0F8FF;
         }
-        
+       
         .selectable {
             cursor: pointer;
         }
-        
+       
         .selectable:hover {
             background-color: #FFEB3B !important;
         }
-        
+       
         .selected {
             background-color: #90EE90 !important;
             font-weight: bold;
         }
-        
+       
         .not-available {
             background-color: #D3D3D3;
             color: #666;
+        }
+       
+        /* Display box styles */
+        #displaySelected {
+            visibility: hidden;
+            margin: 0 auto;
+            width: 600px;
+            border: 2px solid #89ed34;
+            padding: 8.75px;
+        }
+       
+        #displaySelected.show {
+            visibility: visible;
+        }
+       
+        #displaySelected #result, #displaySelected #sendinfo {
+            display: inline-block;
+            margin: 0;
+        }
+       
+        #displaySelected #result {
+            min-height: 50px;
+            width: 300px;
+            padding: 0;
+        }
+       
+        #displaySelected #result h4 {
+            margin-bottom: 1em;
+            font-size: 1.15em;
+        }
+       
+        #displaySelected #sendinfo input[type="email"] {
+            width: 200px;
         }
     </style>
 </head>
 <body>
     <h1>Activities at the Cliffs</h1>
-    
+   
     <table id="activitiesTable">
         <thead>
             <tr>
@@ -116,10 +149,25 @@
         </tbody>
     </table>
 
+    <!-- Display box for selected activities -->
+    <div id="displaySelected">
+        <div id="result">
+            <h4>My selected activities to enquire:</h4>
+        </div>
+        <div id="sendinfo">
+            <input type="email" placeholder="johndoe@gmail.com">
+            <button>Get Info</button>
+        </div>
+    </div>
+
     <!-- Link to jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+   
     <!-- Link to your activity.js file -->
     <script src="js/activity.js"></script>
 </body>
 </html>
+
+
+
+
